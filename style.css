@@ -123,20 +123,53 @@
 }
 
 .ex-11-icon:hover {
-    font-size: 60px;
     animation: rotation-fast 2s;
 }
 
 @keyframes rotation-fast {
+    0% {
+        transform: rotate(0deg);
+    }
     90% {
         transform: rotate(270deg);
     }
-    100%{
+    100% {
         transform: rotate(0deg);
     }
 }
 /* /esercio 11 */
 /* esercio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation: translation-12-top 2s linear;
+}
+@keyframes translation-12-top {
+    0%{
+        right: 0%;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: translation-12-bottom 2s linear;
+}
+@keyframes translation-12-bottom {
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+}
+/* /esercio 12 */
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
